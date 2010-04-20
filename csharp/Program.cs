@@ -7,6 +7,11 @@ using System.Text;
 //seal,new,abstract
 namespace csharp
 {
+    struct MyStruct
+    {
+        private int num;    
+    }
+
     interface ISampleInterface
     {
         //inheritance must implement this method
@@ -14,7 +19,6 @@ namespace csharp
         void SampleMethod();
         
     }
-
 
     class A : ISampleInterface
     {
@@ -30,8 +34,8 @@ namespace csharp
     }
     abstract class D:B
     {
-        
     }
+
     class Program
     {
         static void Main(string[] args)
