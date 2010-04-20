@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 //Polymorphism
-//seal,new,abstract
+//seal,new,abstract, container
 namespace csharp
 {
     struct MyStruct
@@ -14,6 +14,7 @@ namespace csharp
         {
             num = a;
         }
+        
         /*
         public ~MyStruct()
         {
@@ -21,7 +22,11 @@ namespace csharp
         }
         */
     }
-
+    static class MyStaticClass
+    {
+        
+    }
+    
     interface ISampleInterface
     {
         //inheritance must implement this method
@@ -37,6 +42,9 @@ namespace csharp
     }
     class B : A
     {
+        virtual public void MyVir()
+        {
+        }
     }
     sealed class C : B
     {
