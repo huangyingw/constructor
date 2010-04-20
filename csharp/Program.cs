@@ -28,6 +28,10 @@ namespace csharp
         {
             return _myInt.CompareTo(obj.MyInt);
         }
+        public int MySortFunction(MyObject obj1, MyObject obj2)
+        {
+            return obj2.CompareTo(obj1);
+        }
     }
     struct MyStruct
     {
