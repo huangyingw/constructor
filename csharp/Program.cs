@@ -9,7 +9,9 @@ namespace csharp
     interface ISampleInterface
     {
         //inheritance must implement this method
+        //Could not implement here
         void SampleMethod();
+        
     }
 
 
