@@ -113,7 +113,7 @@ namespace csharp
                 (
                     delegate(Person p)
                     {
-                        Console.WriteLine(String.Format("{0} {1}", p.age, p.name)); 
+                        Console.WriteLine(String.Format("{0} {1}", p.age, p.name));
                     }
                 );
 
@@ -121,7 +121,7 @@ namespace csharp
                 (
                     delegate(Person p)
                     {
-                        return p.age < 25; 
+                        return p.age < 25;
                     }
                 );
             Console.WriteLine("Age is less than 25");
@@ -129,7 +129,7 @@ namespace csharp
                 (
                     delegate(Person p)
                     {
-                        Console.WriteLine(String.Format("{0} {1}", p.age, p.name)); 
+                        Console.WriteLine(String.Format("{0} {1}", p.age, p.name));
                     }
                 );
 
@@ -138,7 +138,7 @@ namespace csharp
                 (
                     delegate(Person p1, Person p2)
                     {
-                        return p1.name.CompareTo(p2.name); 
+                        return p1.name.CompareTo(p2.name);
                     }
                 );
             people.ForEach(delegate(Person p) { Console.WriteLine(String.Format("{0} {1}", p.age, p.name)); });
@@ -161,7 +161,6 @@ namespace csharp
 
             foreach (MyObject obj in myObjectList)
                 Console.WriteLine(obj.MyInt);
-
         }
     }
 }
