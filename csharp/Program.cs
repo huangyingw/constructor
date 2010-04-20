@@ -5,6 +5,8 @@ using System.Text;
 
 //Polymorphism
 //seal,new,abstract, container
+//override operator, 
+//implement the method to sort and compare in List<T>
 namespace csharp
 {
     struct MyStruct
