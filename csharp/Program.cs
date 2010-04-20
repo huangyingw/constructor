@@ -87,12 +87,30 @@ namespace csharp
                     }
                 );
 
-            List<Person> young = people.FindAll(delegate(Person p) { return p.age < 25; });
+            List<Person> young = people.FindAll
+                (
+                    delegate(Person p)
+                    {
+                        return p.age < 25; 
+                    }
+                );
             Console.WriteLine("Age is less than 25");
-            young.ForEach(delegate(Person p) { Console.WriteLine(String.Format("{0} {1}", p.age, p.name)); });
+            young.ForEach
+                (
+                    delegate(Person p)
+                    {
+                        Console.WriteLine(String.Format("{0} {1}", p.age, p.name)); 
+                    }
+                );
 
             Console.WriteLine("Sorted list, by name");
-            people.Sort(delegate(Person p1, Person p2) { return p1.name.CompareTo(p2.name); });
+            people.Sort
+                (
+                    delegate(Person p1, Person p2)
+                    {
+                        return p1.name.CompareTo(p2.name); 
+                    }
+                );
             people.ForEach(delegate(Person p) { Console.WriteLine(String.Format("{0} {1}", p.age, p.name)); });
 
             people.Sort(delegate(Person p1, Person p2) { return p1.age.CompareTo(p2.age); });
