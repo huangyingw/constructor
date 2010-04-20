@@ -16,7 +16,7 @@ namespace csharp
         {
             num = a;
         }
-        
+
         /*
         public ~MyStruct()
         {
@@ -26,9 +26,9 @@ namespace csharp
     }
     static class MyStaticClass
     {
-        
+
     }
-    
+
     interface ISampleInterface
     {
         //inheritance must implement this method
@@ -39,7 +39,7 @@ namespace csharp
     class A : ISampleInterface
     {
         public void SampleMethod()
-        { 
+        {
         }
     }
     class B : A
@@ -51,7 +51,7 @@ namespace csharp
     sealed class C : B
     {
     }
-    abstract class D:B
+    abstract class D : B
     {
     }
     public class Person
@@ -79,7 +79,13 @@ namespace csharp
             people.Add(new Person(5, "Mark"));
             people.Add(new Person(6, "Cameron"));
             Console.WriteLine("Unsorted list");
-            people.ForEach(delegate(Person p) { Console.WriteLine(String.Format("{0} {1}", p.age, p.name)); });
+            people.ForEach
+                (
+                    delegate(Person p)
+                    {
+                        Console.WriteLine(String.Format("{0} {1}", p.age, p.name)); 
+                    }
+                );
 
             List<Person> young = people.FindAll(delegate(Person p) { return p.age < 25; });
             Console.WriteLine("Age is less than 25");
