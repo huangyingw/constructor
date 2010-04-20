@@ -9,7 +9,17 @@ namespace csharp
 {
     struct MyStruct
     {
-        private int num;    
+        private int num;
+        public MyStruct(int a)
+        {
+            num = a;
+        }
+        /*
+        public ~MyStruct()
+        {
+            
+        }
+        */
     }
 
     interface ISampleInterface
@@ -17,7 +27,6 @@ namespace csharp
         //inheritance must implement this method
         //Could not implement here
         void SampleMethod();
-        
     }
 
     class A : ISampleInterface
