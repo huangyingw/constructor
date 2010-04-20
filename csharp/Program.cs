@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 //Polymorphism
+//seal,new,abstract
 namespace csharp
 {
     interface ISampleInterface
@@ -23,6 +24,13 @@ namespace csharp
     }
     class B : A
     {
+    }
+    sealed class C : B
+    {
+    }
+    abstract class D:B
+    {
+        
     }
     class Program
     {
