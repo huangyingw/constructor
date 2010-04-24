@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp", "csharp\csharp.csproj", "{51A7E7D6-0267-4140-AC31-E6BC3A26D518}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "constructor", "constructor\constructor.csproj", "{51A7E7D6-0267-4140-AC31-E6BC3A26D518}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
