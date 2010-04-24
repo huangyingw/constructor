@@ -7,7 +7,7 @@ using System.Text;
 //seal,new,abstract, container
 //override operator, 
 //implement the method to sort and compare in List<T>
-namespace csharp
+namespace constructor
 {
     public class MyObject : IComparable<MyObject>
     {
