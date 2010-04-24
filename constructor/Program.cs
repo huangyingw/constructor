@@ -53,6 +53,10 @@ namespace constructor
     {
         static void Main(string[] args)
         {
+            A a = new A();
+            B b = new B();
+            C c = new C();
+            //D d = new D();
 
         }
     }
