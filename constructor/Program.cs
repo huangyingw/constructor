@@ -7,26 +7,53 @@ namespace constructor
 {
     class A
     {
-        public void SampleMethod()
+        public A()
         {
+            Console.WriteLine("A()");
+        }
+        ~A()
+        {
+            Console.WriteLine("~A()");
         }
     }
     class B : A
     {
-        virtual public void MyVir()
+        public B()
         {
+            Console.WriteLine("B()");
+        }
+        ~B()
+        {
+            Console.WriteLine("~B()");
         }
     }
     sealed class C : B
     {
+        public C()
+        {
+            Console.WriteLine("C()");
+        }
+        ~C()
+        {
+            Console.WriteLine("~C()");
+        }
     }
     abstract class D : B
     {
+        public D()
+        {
+            Console.WriteLine("D()");
+        }
+        ~D()
+        {
+            Console.WriteLine("~D()");
+        }
     }
     class Program
     {
         static void Main(string[] args)
         {
-                    }
+
+        }
     }
 }
